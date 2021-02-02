@@ -15,5 +15,8 @@ public class Main {
         out.printCountryInfo(country);
         List<City> list=database.getCities(name);
         out.printCities(list);
+
+        City newCity = new City("Sliac",289, "Bystricke okolie","Slovakia");
+        database.insertCity(newCity);
     }
 }
